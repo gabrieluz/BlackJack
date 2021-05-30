@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "BlackJack";
+}
+
+<h1 class="text-center mb-5">Black Jack - 21</h1>
+
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+        <div class="text-center mb-3">
+            <h3>Jogador Um</h3>
+            <p>Vitórias: <span id="victoriesOne">0</span></p>
+
+            <img alt="carta1" src="/images/0.png" height="350" width="250" id="cardOne">
+
+            <div class="d-flex justify-content-around mt-3">
+                <button class="btn btn-dark" id="playOne" onclick="playClickOne()">
+                    Jogar
+                </button>
+                <button class="btn btn-dark" id="stopOne" onclick="stopClickOne()">
+                    Parar
+                </button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h3 class="text-center">Partida</h3>
+            <div class="d-flex justify-content-around my-3">
+                <button class="btn btn-primary px-4" id="start" onclick="start()">
+                    Iniciar
+                </button>
+                <button class="btn btn-danger px-4" id="restart" onclick="restart()">
+                    Reiniciar
+                </button>
+            </div>
+            <div class="d-flex justify-content-center">
+                <span id="pointsPlayerOne">0</span>
+                <span class="mx-2">X</span>
+                <span id="pointsPlayerTwo">0</span>
+            </div>
+            <p class="text-center">Empates: <strong id="aTie">0</strong></p>
+        </div>
+        <div class="text-center mb-3">
+            <h3>Jogador Dois</h3>
+            <p>Vitórias: <span id="victoriesTwo">0</span></p>
+
+            <img alt="cartas" src="/images/0.png" height="350" width="250" id="cardTwo">
+            
+            <div class="d-flex justify-content-around mt-3">
+                <button class="btn btn-dark" id="playTwo" onclick="playClickTwo()">
+                    Jogar
+                </button>
+                <button class="btn btn-dark" id="stopTwo" onclick="stopClickTwo()">
+                    Parar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
