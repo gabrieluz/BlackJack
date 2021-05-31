@@ -71,6 +71,8 @@ function winner() {
         victoryPlayerTwo()
     } else if (totalOfPointsOne < 19 && totalOfPointsTwo === 20) {
         victoryPlayerTwo()
+    } else if (totalOfPointsOne > 21 && totalOfPointsTwo >= 19 && totalOfPointsTwo <= 21) {
+        victoryPlayerTwo()
     } else if (totalOfPointsOne < 19 && totalOfPointsTwo === 21) {
         victoryPlayerTwo()
     } else if (totalOfPointsTwo === 19 && totalOfPointsOne === 20) {
@@ -84,6 +86,8 @@ function winner() {
     } else if (totalOfPointsTwo < 19 && totalOfPointsOne === 20) {
         victoryPlayerOne()
     } else if (totalOfPointsTwo < 19 && totalOfPointsOne === 21) {
+        victoryPlayerOne()
+    } else if (totalOfPointsTwo > 21 && totalOfPointsOne >= 19 && totalOfPointsOne <= 21) {
         victoryPlayerOne()
     } else {
         alert("EMPATE!!!")
